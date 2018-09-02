@@ -28,6 +28,7 @@ module Simpler
 
     def call(env)
       route = @router.route_for(env)
+      return exception_404 if route.nil? 
       controller = route.controller.new(env)
       action = route.action
 
@@ -42,6 +43,14 @@ module Simpler
 
     def require_routes
       require Simpler.root.join('config/routes')
+    end
+
+    def exception_404
+      [
+        404,
+        { 'Content-Type' => 'text/html' },
+        ['<h1>Page Not Found</h1>']
+      ]
     end
 
     def setup_database
