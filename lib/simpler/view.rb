@@ -2,7 +2,6 @@ require 'erb'
 
 module Simpler
   class View
-
     VIEW_BASE_PATH = 'app/views'.freeze
 
     def initialize(env)
@@ -33,10 +32,6 @@ module Simpler
       path = template || [controller.name, action].join('/')
       return path if template.is_a?(Hash)
       Simpler.root.join(VIEW_BASE_PATH, "#{path}.html.erb")
-    end
-
-    def set_content(path)
-      path.first[1]
     end
   end
 end
