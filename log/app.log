@@ -1,0 +1,11 @@
+# Logfile created on 2018-09-09 03:32:39 +0500 by logger.rb/61378
+I, [2018-09-09T03:44:18.382514 #9313]  INFO -- : Request: GET /tests
+I, [2018-09-09T03:44:18.383339 #9313]  INFO -- : Handler: TestsController#index
+I, [2018-09-09T03:44:18.383466 #9313]  INFO -- : Params:  GET: , POST: 
+I, [2018-09-09T03:44:18.383536 #9313]  INFO -- : Response: 200 text/html 
+
+I, [2018-09-09T03:44:56.837895 #9313]  INFO -- : Request: GET /tests
+I, [2018-09-09T03:44:56.838465 #9313]  INFO -- : Handler: TestsController#index
+I, [2018-09-09T03:44:56.838611 #9313]  INFO -- : Params:  GET: , POST: 
+I, [2018-09-09T03:44:56.838683 #9313]  INFO -- : Response: 200 text/html 
+
